@@ -1,0 +1,139 @@
+run_business_cycle_task:
+  description: >
+    Run an internal CyberAutomations business cycle for the current tenant.
+
+    Inputs:
+    -------
+    {tenant_profile}
+    {business_goal}
+
+    Required:
+    - Determine the priority lane: growth, content, competition, intake, support, or prototype design
+    - Route to the right specialist agents
+    - Produce an execution summary with next actions
+  expected_output: >
+    A structured operating brief with chosen lane, findings, proposed actions, blocked items, and next steps.
+
+prospect_research_task:
+  description: >
+    Research a target niche or named company and identify customer pains, goals, channels, and fit.
+
+    Inputs:
+    -------
+    {target_profile}
+
+    Required:
+    - Identify likely pains, goals, and signs of fit
+    - Identify market signals and platform presence
+    - Score fit against CyberAutomations ICP
+  expected_output: >
+    A prospect intelligence brief with fit score, pains, goals, channels, risks, and recommended next move.
+
+competition_scan_task:
+  description: >
+    Analyze direct and adjacent competitors, their offers, messaging, and likely delivery model.
+
+    Inputs:
+    -------
+    {competitor_list}
+
+    Required:
+    - Summarize positioning and offer logic
+    - Identify differentiators for CyberAutomations
+    - Recommend messaging angles and offer gaps to exploit
+  expected_output: >
+    A competitive intelligence brief with competitor summaries, market gaps, and positioning recommendations.
+
+prototype_plan_task:
+  description: >
+    Create a fast prototype or proof-of-concept plan for a prospect or internal service offer.
+
+    Inputs:
+    -------
+    {prospect_brief}
+
+    Required:
+    - Map pains to one or more CyberAutomations offers
+    - Define prototype workflow, required tools, and outputs
+    - Note what can be standardized vs customized
+  expected_output: >
+    A prototype blueprint with workflow steps, modules, risks, and suggested offer tier.
+
+outreach_campaign_task:
+  description: >
+    Draft personalized outreach based on prospect intelligence and approved messaging standards.
+
+    Inputs:
+    -------
+    {prospect_brief}
+
+    Required:
+    - Draft initial outreach
+    - Draft a teardown or audit angle if relevant
+    - Draft one follow-up
+    - Flag all content for human review before use
+  expected_output: >
+    An outreach package containing first message, follow-up, teardown angle, and review flag.
+
+blog_pipeline_task:
+  description: >
+    Build a content pipeline for CyberAutomations thought leadership.
+
+    Inputs:
+    -------
+    {content_goal}
+    {target_niche}
+
+    Required:
+    - Generate topic clusters
+    - Propose titles and outlines
+    - Identify where real examples, teardowns, or proof assets should be added
+    - Flag all publishable output for human review
+  expected_output: >
+    A blog content plan with topics, outlines, content gaps, and review-required draft status.
+
+reddit_intelligence_task:
+  description: >
+    Build a Reddit intelligence snapshot for the target market.
+
+    Inputs:
+    -------
+    {subreddit_targets}
+
+    Required:
+    - Identify repeated pain patterns
+    - Identify useful phrasing and objections
+    - Identify content or outreach angles inspired by community language
+  expected_output: >
+    A Reddit intelligence brief with repeated pains, language patterns, objections, and recommended use cases.
+
+social_distribution_task:
+  description: >
+    Turn approved ideas into channel-specific social drafts and distribution notes.
+
+    Inputs:
+    -------
+    {approved_content_brief}
+
+    Required:
+    - Draft short-form social variants
+    - Draft thread/carousel ideas if applicable
+    - Flag all content for human review
+  expected_output: >
+    A channel draft pack with post variants, hooks, and review-required status.
+
+intake_workflow_task:
+  description: >
+    Design or refine the intake and onboarding workflow for CyberAutomations.
+
+    Inputs:
+    -------
+    {offer_name}
+    {intake_goal}
+
+    Required:
+    - Map inquiry to qualification to proposal to onboarding
+    - Identify required form fields and approval steps
+    - Specify automations, handoffs, and structured logs
+  expected_output: >
+    An intake workflow blueprint with stages, forms, automations, review gates, and logging requirements.

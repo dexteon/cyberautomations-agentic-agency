@@ -1,0 +1,7 @@
+crewai==1.14.4
+pyyaml>=6.0.1
+python-dotenv>=1.0.1
+requests>=2.32.3
+pydantic>=2.8.2
+chromadb>=0.5.5
+structlog>=24.4.0
