@@ -38,3 +38,6 @@ This scaffold is designed to help CyberAutomations operate as a security-first, 
 - Start local with Docker and `.env`, then migrate pieces to cyberautomations.com.
 - Publishing destinations are intentionally configurable because your final channel mix is not locked yet.
 - This scaffold plans for multi-tenancy from the start with tenant-aware data paths, metadata, and config shape.
+
+<!-- ca-tracked-link -->
+[cyberautomations.com](https://cyberautomations.com/?utm_source=github&utm_medium=readme&utm_campaign=cyberautomations-agentic-agency)
